@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Strach projects</title>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class=" flex relative container mx-auto p-2 justify-items-center ">
+        <!-- flex container -->
+        <div class="flex  items-center justify-between justify-items-center">
+            <!-- logo -->
+            <div class="pt-2 scroll-p-0 justify-items-center">
+                <img src="data:image/png;base64,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"
+                    alt="">
+            </div>
+            <!-- menu items -->
+            <div class="  space-x-6 text-center px-10 md:flex ">
+                <a href="#" class="hover:bg-violet-600">Pricing</a>
+                <a href="#" class="hover:bg-violet-600">Product</a>
+                <a href="#" class="hover:bg-violet-600">About </a>
+                <a href="#" class="hover:bg-violet-600">Careers</a>
+                <a href="#" class="hover:bg-violet-600 ">Communtity</a>
+            </div>
+            <!-- <button -->
+            <a href="" class="grid  text-white bg-orange-500 px-8 md:block rounded-full md:block "> Get
+                Started</a>
+        </div>
+    </nav>
+    <!-- hero section -->
+    <section id="hero">
+        <!-- flex container -->
+        <div
+            class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-x-0 md:flex-row">
+            <!-- left items -->
+            <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+                <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elitVeritatis?
+                </h1>
+                <p class="max-w-sm text-center text-darkGrayishBule md:text-left">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum a molestias quis temporibus iure
+                    autem enim consequuntur reprehenderit, nobis totam nesciunt quasi maiores et eos veniam sit delectus
+                    corrupti? Quam. </p>
+                <div class="flex justify-items-center md:judtify-start">
+                    <a href=""
+                        class="grid justify-items-center p-2 px-6 pt-2 grid text-white bg-orange-500 px-6 rounded-full md:block">
+                        Get
+                        Started</a>
+                </div>
+            </div>
+            <!-- image -->
+            <div class="md:w-1/3">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAABKVBMVEX859XzeQypOxHPWRIaO6X97N7/6tbzcwD/7NfzdAD96tn/7dfz3836z7P0upXx3MsALaPvuZYAKqIAJ6L4fQsAH6HVcC4ANqu5ZVTpdhYAOaXDucf5ewCQWmsAOKktSKb0qnvvwqSppL3UxsrqqYDm1tDKv8jot5m1rsP/89kAIqH7177MTAAAAJ3x39PswaejKADVw7QAGKCUlLt1erOnNACHibnJuKquoJPi0c2hnb4pQ6fk0cB5frVha7BYZa8AEJ+ShXvvzrq5YUOcj4SXi4C3RhGyUS+/r6JCVatsdLPcrZjQk3vFfWT4ii31j0T1mFr2o2e/cFT2oGKuRyG7lpjSZhr1jT7kZQDbhVrNj3dxZ1/hlm/SYh7mpXvcpojcuq7WdEA5UKoAPAwBAAAMgklEQVR4nO2dC3vathqAReMIx6LFtedlhQ1aqKltiBMuM/dL0vQUaLe22zlbd+my5f//iCPZJMEGWxa0Cc709nkal4A/8/rTJ1m+FABONPt3vQG7D1dEhSuiwhVR4YqocEVUuCIqXBEVrogKV0SFK6LCFVHhiqhwRVS4IipcERWuiApXRIUrosIVUeGKqHBFVLgiKlwRlaQpymQX2AvgFw+ZMEXS4/SBx3eHBZe+HXxPduVTK69kWGLegSIJs+Z7xPvs43TK5dvvCoKLmg/mUUIUSR77GCJkiexpu92ZitPBRi1kVZGcREXEydmbtz/89PL1j+/ef3j6qAr2bzRlz191OlNwuuG674Ei7Ofs7cvvT06+xzz4llSNdPqrd08f7l9JEiURC5Mi1xK++sQrkqTs2wfYzoMFX3nfJ4U9pZ5WPUuDQSZbHzBt5FKAhCvCCfTTybWeZUWupvT7hyTatDNtt8/P2WoRlitB/HfCFUlnL/2C/IqIpHfV/cy0Xq+3B/UB07pfDQbtttgRE61IAr8HBQUVEUkfIKnczJXo9BzXeOk8k2RF0tmDFUGrilKp9I/VjUJmyLfKJLmhiW9PVgWtU4QT6fkWMROrSIIv1xpapwgn0s8b9vgguYqkzOs1jSxUUSr9bmNHCVUkgf+GGApRlDr4deNYiVQkgbAcClWEHf2rRtdSuKFQRan0+80CS4+uJ0NkbzJEq+y8IumHcEPhilLppxtFlo4/PHX58D/Ho3czyJKgy64pkt6s78toilLphxu1tWw1yNnNYtdl9fvfqSIpG2UoSlEqtVG8R+lwftFUjDYUg5+6W0UvI5pZtKKDDxvExopCV/jV14ekfuf6KPipu1QU3cwoWZSusje1OIqKZvBTd5pFkYIoig5+ZQ+eOEXSRXQSRStKpZ8xp1HiFMHIQkRVtMEAMmmKaJWIpoih4ydzTBKAyVMU3Z3RFR38HDe8O+soTesJUySd0ZKIpij1MW4sb9bxVSYZirLu2dRMBkhvaUkUrejJ3l7tMVM1yiSjoWVOO9POOc58sP+aZihK0cc9wm+M8ZOhaNqp19uZ6UDKUNtZqCLPD4ExeiIU4Z5FhO751OMNFd34wS2NcYSdCEWwXq9n2/UBkH6nlqI1ip7s+ai9uIeKsn9kO4NXndP6PrXLX1H05ONegNqf91ARwFk0qGcGA4lerf2KVvy49ZpZ0UEov6iHGGW2E0f6EEApQ0+iJUVr/WA+MSo6furj+fPnfz2/4qJJ6Oni4uqmxSzkmnnIWxo6Rk+m+RSF+SEtjVHR2bMgL64Wjo+vfi74u+KxOg95O4pijK09RU/C/RBFjFFXZx0PQmchv7EUl8bKGYBdUrRaoIOK2C40iirXQb795nBxHqkUnKrdIUWfKII2yaL7peg/VEPMtei+KaIbuteKYvRoMZJob+8+K6JN7cdKor2v4ynyZh2lhCmij67jtLOYo+vTer3dljqDhCn6iTK8jtPOahcxFbmzjp3IidkdVESbdIzTzmrHLLUoetZxBxVRurRYxbrGeLtMshQBGK0ojiHWo9ikKaIUo1hJxDhdlDhFkWca47Uz1ouMEqYIgKgsitXOGAeOyVMUdQ1fvCT6awNF4bOOAdLfqLJLY+WK0dtTFNGnxcoh1v6MhHwcijfB9uIZ/uPxt5EnGGVylxwUb4C3ePFM+Ax/LEOsxZooehTNi2Wu5F3gZWOZLsudXtspCk2jeO2M/TI1lobma3QpeQklt3I5ZARbXsgXlkZfKImYyrWPJzlhCevWsig0jWIlEevJajfg51Gk3p4iIP2+1lGsJGI8EevFS54iANfe3hDHEONJRo8kKlrb1GK1s83CJVDR2sOQOEl0xnbxlSSJEuNkyM4oAvsr93zGOfHBeD3xH9NppyOeMs067o4ifBxywppEcScbr+mQm/sB28TsDikKdmv0JKo9Zg3rXsTAOL2/S4qA5GtrVEXEkETu12d7nIEbKamKSM3+PnY7qz3cr5/j2jIF58xPDkmuItz3X99CTEmi2j8ZCdSn59N6PdP5Nylaeh4GxdBz94EYkkiuk2I5mFyESbAikkivT2hJVPvHO7jP4hTKDursTwtL3mGsf/OlNw9OopKo9ul48TSsTOd00Jm+OmefUou68TOKj6qqXKP2b28yJPgFpDeva7UQP7V/nl0/LmzQbrtXlbKnUfXhhpSXWXmKXxSf+UFhklT9c2/FUq1W+/RXdfmxc2R5s+fNbQr0ITEE/+yPm8NbU7347VNtiU+/XVQDz+XbFNgJJF4Gp6P/lXp7Gugo8cDcHxy2WR4I+CUeWkh2Wqb67ALz4sVxNSN9Jj+ETtv/3aRpe+p/ZTCdBoak7VO/Imn6qj2Nv0Vf7NGXNyn+WdfaDryQaQ8CQuqD4HtW3gIGdYYRWcIeoLpawNbsgeB7tnwMbdIU3QFcERWuiMpOKCInkxcFY7F0dWr5TjdrwS4ogt1SqbQ4h4yXKlAERrPZ6/VKPf2ON42wE4rKDdly0GJJM1BFVuTD9dd03AG7oAgAVSiMiSKxJAuqDmR8WJ4jKCv3AN0BO6EIzXKCTBShVkEomIZ8NWkhJ14RPh4kP1DwTkv3dXHl/stQ0LCAk4d8ppgrzM3moSAbonu4ubLeMGWsIRnYRpFeLndtBGCr5dtwEZQrXYic4rpau7aTgrh9KaTs2KoglxaK1ryvjAOCdRrckCJLSAa2UCQ2NW2itSC8vCT/vNrBYqXQaEzGZquhL3ry610PgWiU0PIri9fLiiD3RAAriqCWEVGUNxFCgZTRG+pkojZF/ypJyPxVyK4vJAwPycBWitReZYw7IB23Ebwfu+7+hbp6aJR7htnSbL2MNwzCchnnGtABwj/7I9uGqFu2fbvWxiVojvAaD4WCW7OFfrFYHJf8X8uWZxWjr3WhaJfJmm0dL7ghrUJ4SFNYGzI+22VRxaxojlkoQFRqTI7G5FXkWCUTjwVR63B+pAk21BuTSaOH7IYzPjKKBfloCC7xm3vLG4wuc7miCNCoQHo2W/F6tIIy8wW0lbFpzhtd1DyaNAQdlSaGJnshDeSGlFtHWh+HnLgh4VFzfJQnIR1QDIaMz3aK8qCllVC/D3VtBPMNsg1obJHCizsnedwdWj0RGrpdtAAQ5FlPz6ujsm5oTWD4qgap17INoZA7bOJkqsgy+Y9QcI/WXK48ttyfj2VHhHoe5C3HLMmqY0ASUr0KOeq2cEiRhJQBVNyQytqQ8dlK0aHV0GYA9vuopM57PXWESAduuTPDqGWVUVlzkFjuNS/xazkBIqyyZYpdTXZ0X9UlbUspi11FcEdCeHTtOA7Wlpst73hbFsaX8gjXl3zTkedmyWqa5PdopiwULYeUdVHNIVHULRKyoQRCxmcrRYqDjxaAiBX1lPFoNCeVFM2tsre9mi7i7TWdxqxJtBVmJiCKcJaUZ5qVX/7ybr0uITwgUryZdxEXa9MScoJPEWlojmaAnDV0FKxI8/o9NFoKWXFDjpsz2RZVErJrkSpXGTesDYfqW9Yi0ukQRflG0zRN9wDUsEYQAZ1sLySKcqppzjSiCBFFc7zjkVlxM24JSygMTefQe+CHNwW/VpE4tIyK1jS72o0isWTNFyG7riIhh8yZQhQhV5EX0hptlkZbKZq4+wUKAoQzbTQsuluMF4WZ3DLnE6xo4phjdT7ONWwgX5ItlOVx0+gP51rTVztRMZeb2bNcYUjepHsoQq6/vONttdAvWILdbfSdPmlok8WdC15IB4fEinDImdoa5yxdbBTJ2tTDsWMUnXmjeevlGhotN7+h4+Dy0BuNHa8ewtJ8PCyjUsuG3ZYh6q1xr9uygUO2UKyMxoY+HI96/qQnRx45fGhGhoyw2/AujxaEgm/H20PyZGIbisZ41C31UKV1fXxSGnkhdS/k3A0Jh1EhY7PN6BouxnaI7B1SPRavi+6ojxwNQPwriJAI0eJdi38hFNih7liInGy3yTBHuT6x7D9GQ4sP4gC4j7+Ov1nI2OzEYSyp1xNFkWWNTInArrssy4psfJGDLkZ2RBE+/qpU8nlvgI6PxfCyYZQBn3VchvRhV7Oz7vL1XO1dszOKdheuiApXRIUrosIVUeGKqHBFVLgiKlwRFa6ICldEhSuiwhVR4YqocEVUuCIqXBEVrogKV0SFK6LCFVHhiqhwRVS4IipcERWuiApXRIUrosIVUeGKqHBFVLgiKlwRFa6ICldEhSuiwhVR4YqocEVUuCIqXBEVrogKV0SFK6LCFVHhiqhwRVS4IipcEZX9/wPyMtmj5V97CAAAAABJRU5ErkJggg=="
+                    alt="">
+            </div>
+        </div>
+    </section>
+    <!-- features setion -->
+    <section id="features">
+        <!-- felx container -->
+        <div class="container flex flex-col px-4 mx-auto mt-10 sapace-y-12 md:space-y-0 md:flex-row">
+            <!-- what is Different -->
+            <div class="">
+                <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+                    What is Different about manage?
+                </h2>
+                <p class="max-w-sm text-center text-black md:text-left ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse velit nihil corrupti iure fugiat, at
+                    quae nulla quam qui, voluptate vitae soluta commodi vero omnis sed culpa fuga, exercitationem
+                    dolorum.
+                </p>
+            </div>
+            <!-- Numbers list -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+                <!-- list item 1 -->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                    <!-- heading -->
+                    <div class="rounded-l-full bg-yellow-500  md:bg-transparent">
+                        <div class="flex items-center space-x-2 ">
+                            <div class="px-4 py-2 text-white-400 rounded-full md:py-1 bg-orange-400">
+                                01
+                            </div>
+
+                            <div>
+                                <h3 class="max-w-md text-2xl font-bold text-center md:text-left">
+                                    Track company-wide progress
+                                </h3>
+                                <p class="text-balck ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi veritatis aperiam
+                                    magni
+                                    possimus similique libero consequuntur exercitationem sit minima accusamus,
+                                    repellendus
+                                    explicabo, perspiciatis vero ipsa deserunt corporis blanditiis iste dicta!
+                                </p>
+                            </div>
+                        </div>
+                        <!-- list item 1 -->
+                        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                            <!-- heading -->
+                            <div class="rounded-l-full bg-yellow-500  md:bg-transparent">
+                                <div class="flex items-center space-x-2 ">
+                                    <div class="px-4 py-2 text-white-400 rounded-full md:py-1 bg-orange-400">
+                                        02
+                                    </div>
+
+                                    <div>
+                                        <h3 class="max-w-md text-2xl font-bold text-center md:text-left">
+                                            Evrething you need in one place 
+                                        </h3>
+                                        <p class="text-balck ">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi veritatis
+                                            aperiam
+                                            magni
+                                            possimus similique libero consequuntur exercitationem sit minima accusamus,
+                                            repellendus
+                                            explicabo, perspiciatis vero ipsa deserunt corporis blanditiis iste dicta!
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- list item 1 -->
+                                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                                    <!-- heading -->
+                                    <div class="rounded-l-full bg-yellow-500  md:bg-transparent">
+                                        <div class="flex items-center space-x-2 ">
+                                            <div class="px-4 py-2 text-white-400 rounded-full md:py-1 bg-orange-400">
+                                                03
+                                            </div>
+
+                                            <div>
+                                                <h3 class="max-w-md text-2xl font-bold text-center md:text-left">
+                                                    Advanced build-in reports
+                                                </h3>
+                                                <p class="text-balck   ">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                                                    veritatis aperiam
+                                                    magni
+                                                    possimus similique libero consequuntur exercitationem sit minima
+                                                    accusamus,
+                                                    repellendus
+                                                    explicabo, perspiciatis vero ipsa deserunt corporis blanditiis
+                                                    iste dicta!
+                                                </p>
+                                            </div>
+                                        </div>
+    </section>
+
+
+</body>
+
+
+</html>
